@@ -1,0 +1,299 @@
+* {
+  font-family: 'Lora', serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F9FA;
+}
+
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.20);
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+  position: fixed;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: auto;
+  color: white;
+}
+
+.navbar-content ul li a::after {
+  content: "";
+  border-bottom: 1px solid transparent;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  transition: border-bottom 0.3s;
+}
+
+.navbar-content ul li a:hover::after {
+  border-bottom: 1px solid red; /* Muda a cor da borda para branca ao passar o mouse */
+}
+
+.active {
+  border-bottom: 1px solid red;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Outros estilos desejados para o link ativo */
+}
+
+.navbar-content ul {
+  gap: 20px;
+  display: flex;
+  list-style: none;
+}
+
+.navbar-content ul li a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-icons {
+  padding-inline: 20px;
+}
+
+.navbar-icons a{
+  color: white;
+}
+
+.navbar-icons i{
+  margin: 5px;
+  padding: 5px;
+}
+
+.navbar-icons::before{
+  content: '';
+  border-right: 1px solid white;
+}
+
+.navbar-icons::after{
+  content: '';
+  border-left: 1px solid white;
+}
+
+.search-icon a{
+  color: white;
+}
+
+.main-img {
+  background-image: url(assets/mainimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: end;
+}
+
+.main-section {
+  color: white;
+  width: 783px;
+  height: 259px;
+  background-color: #121212E0;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.main-section button {
+  border-radius: 8px;
+  background-color: #37383b;
+  padding: 3px 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  margin: 13px 0px 0px 70px;
+  width: 100px;
+}
+
+.h1-main {
+  max-width: 530px;
+  margin-left: 70px;
+}
+
+.topics h1 {
+  margin-left: 20px;
+}
+
+.description {
+  margin-top: 15px;
+  display: flex;
+  margin-left: 70px;
+  max-width: 500px;
+}
+
+.separator::before {
+  content: "";
+  border-bottom: 1px solid white; 
+  display: block; 
+  margin-top: 10px; 
+  width: 30px;
+  margin-inline: 10px;
+}
+
+.topics {
+  margin-top: 70px;
+  margin-bottom: 18rem;
+  margin-inline: 20px;
+}
+
+.filter {
+  display: flex;
+  font-weight: bold;
+  gap: 20px;
+  font-size: 16px;
+  width: 90%;
+  margin-top: 30px;
+  margin-inline: 20px;
+}
+
+.filter a {
+  text-decoration: none;
+  color: #495057;
+}
+
+.filter-all {
+  margin-left: auto;
+}
+
+.filter-all a {
+  text-decoration: none;
+  color: #495057;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 100%;
+}
+
+.main-cards {
+  background-color: white;
+  width: 310px;
+  height: 565px;
+  margin: 0.8em 0.3em;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.205)
+}
+
+.output-dt {
+  font-size: 12px;
+  color: #6C757D;
+  padding: 10px;
+}
+
+.cards-h3 {
+  color: #495057;
+  padding: 10px;
+}
+
+.cards-p {
+  color: #6C757D;
+  padding: 10px;
+}
+
+.perfil {
+  margin: 40px 10px;
+  display: flex;
+}
+
+.perfil p {
+  padding: 10px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.last-sect {
+  background-image: url(/assets/footerimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+}
+
+.last-sect h1 {
+  max-width: 530px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 36px;
+}
+
+.last-p {
+  color: #6C757D;
+  text-align: center;
+  max-width: 420px;
+}
+
+.last-line::before {
+  content: "";
+  border-bottom: 1px solid #E5E5E5; 
+  display: block; 
+  margin-top: 24px; 
+  width: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background-color: #212529;
+  color: white;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer p {
+  color: #E5E5E5;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.icons-footer{
+  display: flex;
+  gap: 18px;
+}
+
+.icons-footer i:hover {
+  color: red;
+}
+
