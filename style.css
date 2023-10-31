@@ -301,7 +301,7 @@ footer p:hover {
   color: red;
 }
 
-ul, .drop {
+.mbl-ul, .drop {
   display: none;
 }
 
